@@ -7,47 +7,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <div class="banner">
         <div class="logo">
             <img src="img/icons8-kitchen-50.png" alt="Logo do Bistrô">
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="sobremesa.html" target="_blank">Sobremesa</a></li>
-                <li><a href="bebida.html">Drink</a></li>
-            </ul>
-        </nav>
-    </header>
+        <h1>Bem Vindo ao Nosso  Bistrô do Chef</h1>
+    </div>
 
-    <section class="banner">
-        <h1>Bem-vindo ao Nosso 
-            <p>Bistrô do Chef</p>
-        </h1>
-    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="home.html"target="_blank">Home</a></li>
+            <li><a href="bebida.html">Drinks</a></li>
+            <li><a href="sobremesa.html">Sobremesas</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
 
-    <!-- Aqui você pode adicionar mais conteúdo sobre o cardápio -->
-    <section class="Bebidas" id="bebibes">
+    <!-- cardápio -->
+    <section class="Sobremesa" id="Sobremesa">
         <h2> Principais Sobremesas</h2>
-        <div class="bebida">
-            <img src="img/Taca-Natal-Gelatina-creditos.jpg" alt="Drink 1">
-            <h2>Gelatina de Morango na Taça</h2>
-            <p>R$30,00</p>
-            <p>A nossa Taça com Gelatina de Morango tem camadas deliciosas de creme de limão e merengue. </p>
-        </div>
-        <div class="servico">
-            <img src="img/sobre2.jpg" alt="Serviço 2">
-            <h2>Tiramiù</h2>
-            <p>R$20,00</p>
-            <p>É uma sobremesa feita tradicionalmente de camadas de biscoito champagne embebidos em café, creme à base de queijo mascarpone, ovos, açúcar, creme de leite fresco e polvilhada com cacau em pó e café.</p>
-        </div>
-        <div class="servico">
-            <img src="img/doce3.jpg" alt="Serviço 3">
-            <h2>Panna Cota</h2>
-            <p>R$42,00</p>
-            <p>Seguindo a linha do pudim, a panna cotta é um doce italiano com textura parecida, mas com sabor completamente diferente. A panna cotta, possui uma base mais neutra e pode ser servido com nutella, frutas vermelhas, calda de maracujá.</p>
-        </div>
+        <div class="container"> <!-- Contêiner adicionado -->
+            <div class="sobremesas">
+                <img src="img/sobremesa6.jpg" alt="Sobremesa 1">
+                <h2>Mousse de maracujá com ganache de chocolate</h2>
+                <p>R$30,00</p>
+                <p>Para quem gosta de doce – mas nem tanto –, essa é uma opção clássica! A mousse de maracujá com ganache é uma receita rápida, simples de preparar e, ainda assim, uma sobremesa muito saborosa e sofisticada.</p>
+            </div>
+            <div class="sobremesas">
+                <img src="img/sobre2.jpg" alt="Sobremesa 2">
+                <h2>Tiramiù</h2>
+                <p>R$20,00</p>
+                <p>É uma sobremesa feita tradicionalmente de camadas de biscoito champagne embebidos em café, creme à base de queijo mascarpone, ovos, açúcar, creme de leite fresco e polvilhada com cacau em pó e café.</p>
+            </div>
+            <div class="sobremesas">
+                <img src="img/doce3.jpg" alt="Sobremesa 3">
+                <h2>Panna Cota</h2>
+                <p>R$42,00</p>
+                <p>Seguindo a linha do pudim, a panna cotta é um doce italiano com textura parecida, mas com sabor completamente diferente. A panna cotta possui uma base mais neutra e pode ser servida com nutella, frutas vermelhas, calda de maracujá.</p>
+            </div>
+        </div> <!-- Fim do contêiner -->
     </section>
 
     <footer>
