@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #421414;
+    color: #b39283;
+}
+
+/* BANNER PRINCIPAL */
+.banner {
+    background-image: url('/ativ_3/img/banner2.jpg');
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    
+    
+   
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.banner ::after{
+    content: 0;
+    display: table;
+    clear: both;
+}
+
+.logo-banner {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    margin-top: auto;
+    margin-left: 20px; /* Ajuste o valor conforme necessário */
+}
+
+.logo {
+    margin: 20px 60px 0; /* Adiciona margem à direita e abaixo da logo */
+}
+
+.logo img {
+    max-width: 100%; /* Faz a imagem se ajustar ao tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    width: 100px; /* Define uma largura fixa, ajuste conforme necessário */
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin: 0; /* Remove a margem padrão do h1 */
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+/* MENU */
+.menu {
+    /* Adiciona um espaço entre o título e o menu */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7c3e1a96;
+    background-color: #551818c0;
+    padding: 10px 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  }
+  .menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  .menu li {
+    margin-left: 30px;
+  }
+  .menu li:first-child {
+    margin-left: 0;
+  }
+  .menu a {
+    color: rgb(168, 196, 228);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+  }
+  .menu a:hover,
+.menu a:focus {
+  color: #e98b49;
+}
+.menu::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+
+/* HOME */
+.Pratos {
+    padding: 20px; /* Espaçamento interno da seção */
+    text-align: center; /* Centraliza o texto */
+}
+
+.Pratos h2 {
+    font-size: 2em; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.container {
+    display: flex; /* Usar flexbox para alinhar os itens */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.servico {
+    background: #551818; /* Cor de fundo para cada serviço */
+    border: 1px solid #813a24; /* Borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    margin: 15px; /* Margem ao redor de cada serviço */
+    width: calc(30% - 40px); /* Largura do contêiner */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s; /* Transição suave para o efeito de hover */
+    color: rgb(168, 196, 228);
+}
+
+.servico:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
+
+.servico img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas para a imagem */
+}
+
+.servico h2 {
+    font-size: 1.5em; /* Tamanho da fonte do nome do serviço */
+    margin: 10px 0; /* Margem acima e abaixo do nome */
+    color: rgb(168, 196, 228);
+}
+
+.servico p {
+    margin: 5px 0; /* Margem acima e abaixo da descrição e preço */
+    color: #b49e83;
+}
+
+/* DEPOIMENTOS */
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.depoimento-card {
+    background-color: #753737; /* Cor de fundo do card */
+    border: 1px solid #9b5757; /* Borda do card */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 20px; /* Espaçamento interno */
+    margin: 15px; /* Espaçamento entre os cards */
+    width: 80%; /* Largura do card */
+    max-width: 600px; /* Largura máxima do card */
+    box-shadow: 0 2px 5px rgba(160, 150, 150, 0.1); /* Sombra do card */
+    color: rgb(214, 202, 202);
+}
+
+blockquote {
+    margin: 0; /* Remove margens do blockquote */
+    font-style: italic; /* Estilo itálico para o depoimento */
+}
+
+cite {
+    display: block; /* Faz o cite ocupar toda a largura */
+    margin-top: 10px; /* Espaço acima do nome do cliente */
+    font-weight: bold; /* Deixa o nome em negrito */
+    text-align: right; /* Alinha o nome à direita */
+}
+
+/* FOOTER */
+footer {
+    background-color: #582626;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: rgb(152, 187, 218);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.icones-footer {
+    display: flex; /* Usar flexbox para alinhar os ícones */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    margin-top: 10px; /* Espaço acima dos ícones */
+}
+
+.icone {
+    width: 30px; /* Largura do ícone */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 15px; /* Espaçamento horizontal entre os ícones */
+    transition: transform 0.3s; /* Efeito de transição para hover */
+}
+
+.icone:hover {
+    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}
